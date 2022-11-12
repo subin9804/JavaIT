@@ -20,6 +20,20 @@ public class Array4 {
 
 		
 		
+		System.out.println("어느 나라의 수도가 궁금하신가요?");
+		answer = sc.next();
+		
+		if (answer.equals(nations[0])) {
+			System.out.println(answer+"의 수도는 "+cities[0]+"입니다.");
+		}else{
+			for(int i=0; !(answer.equals(nations[i]));i++) {
+				index = i+1;
+			}
+			System.out.println(answer+"의 수도는 "+cities[index]+"입니다.");
+		}
+			
+	
+		
 		
 				
 				
