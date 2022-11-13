@@ -38,7 +38,7 @@ public class Oper6 {
 		System.out.println("거짓||거짓: "+(거짓||거짓));
 		
 		// 키가 150cm이상이거나 나이가 15이상이면 통과
-		double height = 160,0;
+		double height = 160.0;
 		System.out.println(height >= 150 || age >= 15);
 		
 		// not ! 아니면: 맞으면 틀린걸로, 틀리면 맞는 걸로
@@ -49,18 +49,18 @@ public class Oper6 {
 		
 		// 논리연산자 예제
 		
-		int x = 100, y = 200;
-		result = x<y && y>=200;
-		
-		System.out.println(result);
-		result = x<y && y<200;
-		System.out.println(result);
-		result = x<y || y>=200;
-		System.out.println(result);
-		result = x<y || y<200;
-		System.out.println(result);
-		result =!(x>y);
-		System.out.println(result);
-		
+//		int x = 100, y = 200;
+//		result = x<y && y>=200;
+//		
+//		System.out.println(result);
+//		result = x<y && y<200;
+//		System.out.println(result);
+//		result = x<y || y>=200;
+//		System.out.println(result);
+//		result = x<y || y<200;
+//		System.out.println(result);
+//		result =!(x>y);
+//		System.out.println(result);
+//		
 	}
 }
