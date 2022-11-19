@@ -5,12 +5,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class MyController {
-	// @Controller: html과 연결
 	
-	@GetMapping("/")
+	@GetMapping("/my")		// /my로 들어가면
 	public String home() {
-		// localhost:8080/ 로 이동하면
-		
-		return "index.html";		// index.html 열기
+		return "index";		// 해당 html파일을 열어줌
 	}
 }
