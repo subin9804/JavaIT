@@ -6,7 +6,6 @@ public class Extends4 {
 		System.out.println("이름: "+human.getName()", 나이: "+human.getAge());
 		
 		Member member = new Member("홍길동",35 , 10075);
-		member.setIntro("착한사람");
 		member.print();
 		
 	}
