@@ -3,7 +3,7 @@ package Day07;
 public class Extends4 {
 	public static void main(String[] args) {
 		Human human = new Human("홍길동",35);
-		System.out.println("이름: "+human.getName()", 나이: "+human.getAge());
+		System.out.println("이름: "+human.getName()+", 나이: "+human.getAge());
 		
 		Member member = new Member("홍길동",35 , 10075);
 		member.print();
@@ -45,6 +45,11 @@ class Member extends Human {
 		this.memNo = memNo;
 	}
 	
+	public void print() {
+		// TODO Auto-generated method stub
+		
+	}
+
 	public int getMemNo() {
 		return memNo;
 	}

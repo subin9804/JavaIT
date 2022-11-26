@@ -21,15 +21,13 @@ class Star {
 		this.menu = menu;
 	}
 	// oo을 판매합니다.
-	public String sell() {
+	public void sell() {
 		System.out.println(this.menu + "를 판매합니다.");
-		return this.menu;
 	}
 	
 	// oo의 가격은 oo입니다
-	public Star info() {
+	public void info() {
 		System.out.println(this.menu+"의 가격은 "+this.price+"원 입니다.");
-		return this;
 	}
 }
 
@@ -43,40 +41,15 @@ class StarBupyeong extends Star {
 	
 	// 부평정 - oo을 판매합니다.
 	@Override
-	public String sell() {
+	public void sell() {
 		System.out.println("부평점 - "+this.menu+"를 판매합니다.");
-		return menu;
 	}
 	//부평정 - oo의 가격은 oo입니다.
 	@Override
-	public Star info() {
+	public void info() {
 		System.out.println("부평점 - "+this.menu+"의 가격은 "+this.price+"원 입니다.");
-		return this;
 	}
 	
-}
-
-class StarBupyeong extends Star {
-	// 부평점: 스타벅스가 기본적으로 갖춰야할 것 + 부평점만의 특징
-	
-	// 생성자로 가격, 메뉴 재정의하기
-	StarBupyeong(int price, String menu){
-		super(price, menu);
-	}
-	
-	// 부평정 - oo을 판매합니다.
-	@Override
-	public String sell() {
-		System.out.println("부평점 - "+this.menu+"를 판매합니다.");
-		return menu;
-	}
-	//부평정 - oo의 가격은 oo입니다.
-	@Override
-	public Star info() {
-		System.out.println("부평점 - "+this.menu+"의 가격은 "+this.price+"원 입니다.");
-		return this;
-	}
-
 }
 
 // 인터페이스를 상속받을 때는 implements
@@ -97,7 +70,7 @@ class StarGangnam implements Star2{
 
 	@Override
 	public void info() {
-		System.out.println("부평점 - "+menu+"의 가격은 "+price+"원 입니다.");
+		System.out.println("강남점 - "+menu+"의 가격은 "+price+"원 입니다.");
 		
 	}
 }
@@ -124,3 +97,4 @@ class SS extends Star implements AA, Star2 {
 		// TODO Auto-generated method stub
 		
 	}
+}
