@@ -18,7 +18,7 @@ public class Var3 {
 		// 소수점 있는 숫자
 		double 파이 = 3.14;
 		
-		System.out.println(뺄셈);
+		System.out.println("뺄셈: "+뺄셈);
 		System.out.println(휴대폰);
 		System.out.println(파이);
 		

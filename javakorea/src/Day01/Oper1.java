@@ -50,7 +50,7 @@ public class Oper1 {
 		int num3 = 9/3;
 		System.out.println(num3);
 		
-		// 5. 나머지구하지 연산자
+		// 5. 나머지구하기 연산자
 		int num4 = 10%3;
 		System.out.println(num4);
 		
